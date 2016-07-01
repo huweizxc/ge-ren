@@ -1,12 +1,20 @@
 body{
-	font-family: "微软雅黑";
+	font-family:  PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+}
+.yangshi{
+	background-color: #FFF;
 }
 .lll{
+	
 	height: 30px;
-	width: 100%;
-	border-bottom: 1px solid #ccc;
 	line-height: 30px;
-	font-size: 13px;
+	font-size: 16px;
+	height: 50px;
+	margin-left: 10px;
+	line-height: 50px;
+}
+.bb{
+	border-bottom: 1px solid #C8C8C8;
 }
 .ml10{
 	margin-left: 10px;
@@ -17,3 +25,4 @@ body{
 .mt10{
 	margin-top: 10px;
 }
+

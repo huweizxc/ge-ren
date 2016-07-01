@@ -17,6 +17,7 @@
 	<link href="Public/index/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link href="Public/index/css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="Public/index/css/base.css" type="text/css" rel="stylesheet">
+	<link href="Public/index/css/pram.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/orders.css"/>
 	<!------ css ------------------------------------------>
 	<!------ js ------------------------------------------>
@@ -25,30 +26,46 @@
 	<!------ js ------------------------------------------>
 </head>
 	<body>
-		<div class="mid"</div>
-			<div class="mid-top">
-				<h1 class="fz">接单管理</h1>
-				<div class="order">
-					<span class="fz">当前进行订单：<span class="cred">1</span>个</span>
-					<a><span class="fr fz cblue">查看></span></a>
-				</div>
-				<div class="order">
-					<span class="fz">已完成订单：<span class="cblack">6</span>个</span>
-					<a><span class="fr fz cblue">查看></span></a>
-				</div>
+		<div class="Account">
+		<a href="">
+			<div class="form-group">
+				<label class="labelname">当前进行订单</label>
+				<i class="iconfont"><span class="d80909">1 笔</span>
+					&#xe610;</i>
 			</div>
-			<div>
-				<div id="bot">
+		</a>
+		<a href="">
+			<div class="form-group">
+				<label class="labelname">完成订单</label>
+				<i class="iconfont"><span>6 笔</span>
+					&#xe610;</i>
+			</div>
+		</a>
+		
+			
+		</div>	
+			
 				<textarea  type="text" id="txt" placeholder="请输入留言内容"></textarea>
-				<div class="tac">
-					<input type="button" id="suspend" value="暂停订单" />
-				</div>
-				<div class="tac">
-					<input type="button" id="recovery" value="恢复订单" />
+			
+			<div class="yangshi">
+				<div class="tip">*当前有正在进行的订单时，暂停接单只能后续不再派发订单，当前订单必须完成。</div> 
+				<div id="bot">
+					<input type="button" class="tac" id="suspend" value="暂停订单" />
+				
+					<input type="button" class="tac" id="recovery" value="恢复订单" />
 				</div>
 			</div>
-			<div class="tip">提示：当前有正在进行的订单时，暂停接单只能后续不再派发订单，当前订单必须完成。</div>
-		</div>
+			
+		
+		<script type="text/javascript">
+        	$(document).ready(function(){
+  				$("#bot").click(function(){
+  						$("#suspend").toggle();
+  						$("#recovery").toggle();
+  		
+					});
+			});
+        </script>
 	</body>
 	
 </html>
